@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: bfdc9da03b37a0947892c44134288cea
+guid: 958e51c4cfe2862428bad661f5fba452
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 270867796513690207
-    second: bowl_0
-  - first:
-      213: 2905102754601363371
-    second: bowl_1
+      213: 6937817954938267909
+    second: 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bowl_0
+      name: 2_0
       rect:
         serializedVersion: 2
-        x: 303
-        y: 503
-        width: 2476
-        height: 909
+        x: 0
+        y: 0
+        width: 576
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f529a4863d052c300800000000000000
-      internalID: 270867796513690207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bowl_1
-      rect:
-        serializedVersion: 2
-        x: 2970
-        y: 566
-        width: 23
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba7e50c309ff05820800000000000000
-      internalID: 2905102754601363371
+      spriteID: 5092c600ca4184060800000000000000
+      internalID: 6937817954938267909
       vertices: []
       indices: 
       edges: []
