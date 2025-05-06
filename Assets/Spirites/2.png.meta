@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7cc4a1e7c5a020a41986305f65191432
+guid: 958e51c4cfe2862428bad661f5fba452
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -469070558686369234
-    second: RainDrop_0
+      213: 6937817954938267909
+    second: 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RainDrop_0
+      name: 2_0
       rect:
         serializedVersion: 2
-        x: 296
-        y: 88
-        width: 433
-        height: 691
+        x: 0
+        y: 0
+        width: 576
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2aa7e6efc68d79f0800000000000000
-      internalID: -469070558686369234
+      spriteID: 5092c600ca4184060800000000000000
+      internalID: 6937817954938267909
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      RainDrop_0: -469070558686369234
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
