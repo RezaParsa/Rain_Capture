@@ -5,13 +5,13 @@ public class PlayerMovement2D : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Animator animator;
 
     private void Awake()
     {
         if (!rb) rb = GetComponent<Rigidbody2D>();
         if (!spriteRenderer) spriteRenderer = GetComponent<SpriteRenderer>();
-
-
+        if (!animator) animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -31,5 +31,9 @@ public class PlayerMovement2D : MonoBehaviour
         {
             spriteRenderer.flipX = true; // Flip sprite to face left
         }
+
+        // Set the "IsRunning" parameter in the Animator based on player movement
+        bool isRunning = horizontalInput != 0; // If player is moving, set IsRunning to true
+        animator.SetBool("IsRunning",isRunning);  // Set the "IsRunning" parameter in the Animator
     }
 }

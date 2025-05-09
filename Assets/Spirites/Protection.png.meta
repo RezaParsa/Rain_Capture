@@ -119,7 +119,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 6fe7a86404b012090800000000000000
-      internalID: -8061149487327183114
+      internalID: 4094743974595036161
       vertices: []
       indices: 
       edges: []
@@ -160,12 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< HEAD:Assets/Spirites/bowl.png.meta
-      bowl_0: 270867796513690207
-      bowl_1: 2905102754601363371
-=======
-      Idle: -8061149487327183114
->>>>>>> animation:Assets/Spirites/Protection.png.meta
+      Idle: 4094743974595036161
+      Protection_1: 872000403840971672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
