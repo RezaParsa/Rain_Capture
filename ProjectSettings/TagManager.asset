@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Audio
+  - Enemy
+  - Wall
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -12,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Enemies
   - 
   - 
   - 
