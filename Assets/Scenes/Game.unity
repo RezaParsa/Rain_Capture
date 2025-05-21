@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -482.83844, y: -187.33002}
+  m_AnchoredPosition: {x: -482.74, y: -187.33}
   m_SizeDelta: {x: 7.6135, y: 0.4821}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &69281463
@@ -1372,7 +1372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -482.84, y: -187.33}
+  m_AnchoredPosition: {x: -481.25, y: -187.33}
   m_SizeDelta: {x: 3.6724, y: 0.66956}
   m_Pivot: {x: 0.4999968, y: 0.5000103}
 --- !u!114 &1210286347
@@ -1641,7 +1641,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.567
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1869,8 +1869,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb31c063d1dbeb4e982e5135c5ac2a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
   maxHealth: 100
+  health: 100
   healthBar: {fileID: 1553552868}
 --- !u!1 &1574473770
 GameObject:

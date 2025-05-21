@@ -1,27 +1,47 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public float maxHealth = 100f;
     public float health;
-    public float maxHealth = 80;
-    public Image healthBar;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public Image healthBar; // Assign this in the Inspector
+
     void Start()
     {
-        maxHealth = health;
+        health = maxHealth * 0.5f; // Start at 50% health
+        UpdateHealthBar();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+        UpdateHealthBar();
 
         if (health <= 0)
         {
             Destroy(gameObject);
         }
+    }
+
+    void UpdateHealthBar()
+    {
+        if (healthBar != null)
+        {
+            healthBar.fillAmount = Mathf.Clamp01(health / maxHealth);
+        }
+    }
+
+    // Optional: Call this to change health from other scripts
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+        UpdateHealthBar();
+    }
+
+    public void Heal(float amount)
+    {
+        health = Mathf.Min(health + amount, maxHealth);
+        UpdateHealthBar();
     }
 }

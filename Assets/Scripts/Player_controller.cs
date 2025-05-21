@@ -10,6 +10,7 @@ public class PlayerMovement2D : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Animator animator;
+   
 
    
 
