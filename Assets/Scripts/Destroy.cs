@@ -13,5 +13,14 @@ public class EnemyCollision : MonoBehaviour
             // Destroy this enemy GameObject
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            //log enemy hit player
+            Debug.Log("enemy hit player!");
+
+            //Destroy this enemy object
+            Destroy(gameObject);
+        }
     }
 }

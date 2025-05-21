@@ -22,9 +22,13 @@ public class Damage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Ground"))
         {
             pHealth.health -= damage;
+        }
+        if (other.gameObject.CompareTag("Player"))
+        {
+            pHealth.health += damage;
         }
     }
 

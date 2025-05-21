@@ -1,4 +1,8 @@
 ﻿using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerMovement2D : MonoBehaviour
 {
@@ -6,6 +10,8 @@ public class PlayerMovement2D : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Animator animator;
+
+   
 
     private void Awake()
     {
@@ -35,5 +41,10 @@ public class PlayerMovement2D : MonoBehaviour
         // Set the "IsRunning" parameter in the Animator based on player movement
         bool isRunning = horizontalInput != 0; // If player is moving, set IsRunning to true
         animator.SetBool("IsRunning",isRunning);  // Set the "IsRunning" parameter in the Animator
+    
+        
     }
+
+  
+  
 }
