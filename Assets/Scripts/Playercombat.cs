@@ -10,7 +10,6 @@ public class Playercombat : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -19,19 +18,18 @@ public class Playercombat : MonoBehaviour
         }
     }
 
-  
-    void OnDrawGizmosSelected()
+    void Attack()
     {
-        if (attackPoint == null)
-            return;
+        animator.SetTrigger("Attack");
 
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("We hit " + enemy.name);
+            // Add damage logic here if needed
+        }
     }
 
-
-
-
-
-
+  
 }
-
