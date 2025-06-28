@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 146765057}
   - component: {fileID: 146765062}
   - component: {fileID: 146765063}
+  - component: {fileID: 146765064}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -156,7 +157,7 @@ Rigidbody2D:
   m_Mass: 2.8669996
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -279,7 +280,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -6024728047538356838, guid: 4c65b0691384f7a45933b5b92dafb514, type: 3}
   m_Color: {r: 0.9789042, g: 1, b: 0.0039215684, a: 1}
   m_FlipX: 0
@@ -332,6 +333,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pHealth: {fileID: 1569720860}
   damage: 5
+--- !u!114 &146765064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146765056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4036a7d3e24a94aa3fc9ca02e66714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rainDropPrefab: {fileID: 146765056}
+  spawnInterval: 3
+  xRange: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,13 +499,13 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 30a684f7a31820f4fb2b61227e6e1e0f, type: 3}
   m_Resource: {fileID: 8300000, guid: 30a684f7a31820f4fb2b61227e6e1e0f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.352
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 88
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1657,13 +1673,13 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.961
+  m_Volume: 0.414
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 170
+  Priority: 183
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1755,8 +1771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   attackSound: {fileID: 0}
-  _run1SFX: {fileID: 8300000, guid: 7fdf61d3c196d314bb0add06dbab76a4, type: 3}
-  _run2SFX: {fileID: 8300000, guid: 7fdf61d3c196d314bb0add06dbab76a4, type: 3}
+  _run1SFX: {fileID: 8300000, guid: 85e17c8a7779e61478c1453ec1a05e9e, type: 3}
+  _run2SFX: {fileID: 8300000, guid: 85e17c8a7779e61478c1453ec1a05e9e, type: 3}
 --- !u!1 &1574473770
 GameObject:
   m_ObjectHideFlags: 0
